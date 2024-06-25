@@ -345,9 +345,8 @@ footer img {
 }
 
 /* Responsiveness for small mobile devices (320px) */
-@media (max-width: 320px) {
+@media (max-width: 498px) {
 
-    /* Home Page */
     html, body {
         margin: 0;
         padding: 0;
@@ -361,7 +360,7 @@ footer img {
     .logo img {
         max-height: 40px;
         width: 100%; 
-        padding-left: 60px;
+        padding-left: 80px;
     }
 
     .hero img{

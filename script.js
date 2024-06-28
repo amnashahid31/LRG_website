@@ -26,4 +26,33 @@ $(document).ready(function() {
         $('.navbar').removeClass('active');
         $('#mobile-menu').removeClass('active');
     });
+
+    //for slideshow on about us page
+    let currentIndex = 0;
+        const slides = $('.slide');
+        const totalSlides = slides.length;
+    
+        function showNextSlide() {
+            slides.eq(currentIndex).fadeOut(600);
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.eq(currentIndex).fadeIn(600);
+        }
+    
+        slides.hide().eq(0).show(); // Show the first slide initially
+        setInterval(showNextSlide, 4000); // Change slide every 3 seconds
 });
+
+// $(document).ready(function(){
+//     let currentIndex = 0;
+//     const slides = $('.slide');
+//     const totalSlides = slides.length;
+
+//     function showNextSlide() {
+//         slides.eq(currentIndex).fadeOut(600);
+//         currentIndex = (currentIndex + 1) % totalSlides;
+//         slides.eq(currentIndex).fadeIn(600);
+//     }
+
+//     slides.hide().eq(0).show(); // Show the first slide initially
+//     setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+// });

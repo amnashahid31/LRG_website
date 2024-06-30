@@ -479,7 +479,182 @@ footer img {
     width:70%;
 }
 
+/* 
+.cards {
+    display: flex;
+    flex-direction: column;
+}
 
+.newcard {
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 100px; 
+    cursor: pointer;
+}
+
+.newcard:hover, .newcard.active {
+    max-height: 300px; 
+}
+
+.newcard-content {
+    display: flex;
+    align-items: center;
+}
+
+.newcard-image img {
+    width: 100px; 
+    height: 100px;
+    object-fit: cover;
+}
+
+.newcard-title {
+    padding: 10px;
+}
+
+.newcard-details {
+    padding: 10px;
+    display: none;
+}
+
+.newcard.active .newcard-details, .newcard:hover .newcard-details {
+    display: block;
+} */
+
+/* .cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ncard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+.ncard:hover, .ncard.active {
+    max-height: 700px; 
+    background-color: rgb(22, 22, 94);
+}
+
+.ncard-content {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease-out;
+    font-weight: normal;
+}
+
+.ncard-image img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ncard-title {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: rgb(22, 22, 94);
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.ncard-details {
+    margin-left: 20px;
+    padding: 10px;
+    display: none;
+    opacity: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    transition: opacity 0.3s ease-out;
+    color: white;
+}
+
+.ncard:hover .ncard-details, .ncard.active .ncard-details {
+    display: block;
+    opacity: 1;
+}
+
+.ncard:hover .ncard-title{
+    color: white;
+    text-decoration: underline;
+} */
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ncard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 300px;
+    cursor: pointer;
+}
+
+.ncard:hover, .ncard.active {
+    max-height: 700px; 
+    background-color: rgb(22, 22, 94);
+}
+
+.ncard-content {
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease-out;
+    font-weight: normal;
+}
+
+.ncard-image img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.ncard-title {
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    color: rgb(22, 22, 94);
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.ncard-details {
+    margin-left: 20px;
+    padding: 10px;
+    display: none;
+    opacity: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    transition: opacity 0.3s ease-out;
+    color: white;
+}
+
+.ncard:hover .ncard-details, .ncard.active .ncard-details {
+    display: block;
+    opacity: 1;
+}
+
+.ncard:hover .ncard-title{
+    color: white;
+    text-decoration: underline;
+}
 
 /* Responsiveness for tablet (768px) */
 @media (max-width: 768px) {
@@ -891,6 +1066,11 @@ footer img {
         max-width: 90%;
     }
 
+    .sec{
+        font-size: 25px;
+    }
+    
+
     .sectors {
         flex-direction: column;
         text-align: left;
@@ -933,6 +1113,64 @@ footer img {
         padding-top: 10px;
         height: 150px;
         width:100%;
+    }
+
+    /* .ncard {
+        max-height: 300px; 
+    }
+
+    .ncard:hover {
+        max-height: 700px; 
+    }
+
+    .ncard.active {
+        max-height: 750px;
+    }
+
+    .ncard-title{
+        font-size: 18px;
+    }
+    .ncard-details{
+        font-size: 14px;
+    }
+    .ncard-image img{
+        height: 150px;
+        width: 200px;
+    }
+
+    .ncard:hover .ncard-content, .ncard.active .ncard-content {
+        display: none;
+    } */
+    .ncard-content {
+        flex-direction: column; /* Change flex direction to column */
+    }
+
+    .ncard-image img {
+        width: 100%; /* Make image responsive */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0; /* Remove margin to center the image */
+    }
+
+    .ncard-title {
+        padding-left: 0; /* Reset left padding */
+        text-align: center; /* Center align the text */
+    }
+
+    .ncard {
+        max-height: 150px; /* Adjust this value based on the height of the collapsed card */
+    }
+
+    .ncard.active {
+        max-height: 700px; /* Adjust this value based on the height of the expanded content */
+    }
+
+    .ncard-details {
+        display: none; /* Ensure details are hidden by default */
+    }
+
+    .ncard.active .ncard-details {
+        display: block; /* Show details when card is active */
+        opacity: 1; /* Fade in the details */
     }
 }
 

@@ -40,6 +40,35 @@ $(document).ready(function() {
     
         slides.hide().eq(0).show(); // Show the first slide initially
         setInterval(showNextSlide, 4000); // Change slide every 3 seconds
+
+        //csr page cards
+        // const cards = document.querySelectorAll('.newcard');
+
+        // cards.forEach(card => {
+        //     card.addEventListener('click', () => {
+        //         card.classList.toggle('active');
+        //     });
+        // });
+        // const cards = document.querySelectorAll('.card');
+
+        // cards.forEach(card => {
+        //     card.addEventListener('click', () => {
+        //         card.classList.toggle('active');
+        //     });
+        // });
+        const cards = document.querySelectorAll('.ncard');
+
+        cards.forEach(card => {
+            card.addEventListener('click', () => {
+                // If the card is active, remove the active class to close it
+                if (card.classList.contains('active')) {
+                    card.classList.remove('active');
+                } else {
+                    // Otherwise, add the active class to open it
+                    card.classList.add('active');
+                }
+            });
+        });
 });
 
 // $(document).ready(function(){

@@ -1040,9 +1040,10 @@ footer img {
     
     .sectors img{
         align-items: center;
+        padding-left: 10px;
         padding-top: 10px;
         height: 150px;
-        width:100%;
+        width:90%;
     }
     .emp {
         flex-direction: column; 

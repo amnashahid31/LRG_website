@@ -42,46 +42,11 @@ $(document).ready(function() {
         setInterval(showNextSlide, 4000); // Change slide every 3 seconds
 
         //csr page cards
-        // const cards = document.querySelectorAll('.newcard');
-
-        // cards.forEach(card => {
-        //     card.addEventListener('click', () => {
-        //         card.classList.toggle('active');
-        //     });
-        // });
-        // const cards = document.querySelectorAll('.card');
-
-        // cards.forEach(card => {
-        //     card.addEventListener('click', () => {
-        //         card.classList.toggle('active');
-        //     });
-        // });
-        const cards = document.querySelectorAll('.ncard');
+        const cards = document.querySelectorAll('.card');
 
         cards.forEach(card => {
-            card.addEventListener('click', () => {
-                // If the card is active, remove the active class to close it
-                if (card.classList.contains('active')) {
-                    card.classList.remove('active');
-                } else {
-                    // Otherwise, add the active class to open it
-                    card.classList.add('active');
-                }
+            card.addEventListener('click', function() {
+                this.classList.toggle('active');
             });
         });
 });
-
-// $(document).ready(function(){
-//     let currentIndex = 0;
-//     const slides = $('.slide');
-//     const totalSlides = slides.length;
-
-//     function showNextSlide() {
-//         slides.eq(currentIndex).fadeOut(600);
-//         currentIndex = (currentIndex + 1) % totalSlides;
-//         slides.eq(currentIndex).fadeIn(600);
-//     }
-
-//     slides.hide().eq(0).show(); // Show the first slide initially
-//     setInterval(showNextSlide, 3000); // Change slide every 3 seconds
-// });

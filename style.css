@@ -1145,7 +1145,7 @@ footer img {
         align-items: center;
         padding-left: 10px;
         padding-right: 10px;
-        height: 790px;
+        height: 180vh;
     }
 
     .csrimg{
@@ -1456,7 +1456,7 @@ footer img {
         align-items: center;
         padding-left: 10px;
         padding-right: 10px;
-        height: 780px;
+        height: 180vh;
     }
 
     .csrimg{
@@ -1468,7 +1468,7 @@ footer img {
         padding-right: 0;
         padding-left: 10px;
         font-size: 15px;
-        padding-top: 20px;
+        /* padding-top: 20px; */
     }
     .csrs p {
         text-align: left;
@@ -1481,10 +1481,9 @@ footer img {
         flex-direction: column-reverse;
         }
     .csrs img {
-        padding-top: 10px;
+        /* padding-top: 10px; */
         width: 100%;
         height: 150px;
         padding-left: 10px;
-        /* padding-bottom: 10px; */
     }
 }

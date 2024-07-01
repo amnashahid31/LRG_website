@@ -41,12 +41,4 @@ $(document).ready(function() {
         slides.hide().eq(0).show(); // Show the first slide initially
         setInterval(showNextSlide, 4000); // Change slide every 3 seconds
 
-        //csr page cards
-        const cards = document.querySelectorAll('.card');
-
-        cards.forEach(card => {
-            card.addEventListener('click', function() {
-                this.classList.toggle('active');
-            });
-        });
 });
